@@ -1,0 +1,16 @@
+C:\CodeL\PolyMorph__Practice\PolyMorph__Practice\bin\Debug\net5.0\PolyMorph__Practice.exe
+C:\CodeL\PolyMorph__Practice\PolyMorph__Practice\bin\Debug\net5.0\PolyMorph__Practice.deps.json
+C:\CodeL\PolyMorph__Practice\PolyMorph__Practice\bin\Debug\net5.0\PolyMorph__Practice.runtimeconfig.json
+C:\CodeL\PolyMorph__Practice\PolyMorph__Practice\bin\Debug\net5.0\PolyMorph__Practice.runtimeconfig.dev.json
+C:\CodeL\PolyMorph__Practice\PolyMorph__Practice\bin\Debug\net5.0\PolyMorph__Practice.dll
+C:\CodeL\PolyMorph__Practice\PolyMorph__Practice\bin\Debug\net5.0\PolyMorph__Practice.pdb
+C:\CodeL\PolyMorph__Practice\PolyMorph__Practice\obj\Debug\net5.0\PolyMorph__Practice.csproj.AssemblyReference.cache
+C:\CodeL\PolyMorph__Practice\PolyMorph__Practice\obj\Debug\net5.0\PolyMorph__Practice.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodeL\PolyMorph__Practice\PolyMorph__Practice\obj\Debug\net5.0\PolyMorph__Practice.AssemblyInfoInputs.cache
+C:\CodeL\PolyMorph__Practice\PolyMorph__Practice\obj\Debug\net5.0\PolyMorph__Practice.AssemblyInfo.cs
+C:\CodeL\PolyMorph__Practice\PolyMorph__Practice\obj\Debug\net5.0\PolyMorph__Practice.csproj.CoreCompileInputs.cache
+C:\CodeL\PolyMorph__Practice\PolyMorph__Practice\obj\Debug\net5.0\PolyMorph__Practice.dll
+C:\CodeL\PolyMorph__Practice\PolyMorph__Practice\obj\Debug\net5.0\refint\PolyMorph__Practice.dll
+C:\CodeL\PolyMorph__Practice\PolyMorph__Practice\obj\Debug\net5.0\PolyMorph__Practice.pdb
+C:\CodeL\PolyMorph__Practice\PolyMorph__Practice\obj\Debug\net5.0\PolyMorph__Practice.genruntimeconfig.cache
+C:\CodeL\PolyMorph__Practice\PolyMorph__Practice\obj\Debug\net5.0\ref\PolyMorph__Practice.dll
