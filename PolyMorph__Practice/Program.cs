@@ -10,7 +10,7 @@ namespace PolyMorph__Practice
             bool finished = false; 
             
             Console.WriteLine("Please enter an amount for the transaction, i.e. 23.45- no dollar sign and two decimal places only.");
-            Console.WriteLine("Amounts less than or equal to $200 will be processed with Ingenic.");
+            Console.WriteLine("Amounts less than or equal to $100 will be processed with Ingenic.");
             Console.WriteLine("Amounts more than $200 and less than or equal to $500 will be processed with Clover.");
             Console.WriteLine("Amounts more than and equal to $501 will be processed with Square.");
             
