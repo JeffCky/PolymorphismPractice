@@ -6,27 +6,25 @@ namespace PolyMorph__Practice
     {
         static void Main(string[] args)
         {
+            bool isADecimal;
+            bool finished = false; 
+            
             Console.WriteLine("Please enter an amount for the transaction, i.e. 23.45- no dollar sign and two decimal places only.");
             Console.WriteLine("Amounts less than or equal to $200 will be processed with Ingenic.");
             Console.WriteLine("Amounts more than $200 and less than or equal to $500 will be processed with Clover.");
             Console.WriteLine("Amounts more than and equal to $501 will be processed with Square.");
-
-            decimal result = 0m;
-            bool isADecimal;
-            bool finished = false;
+            
             
             do
             {
-                string type;
-                isADecimal = decimal.TryParse(Console.ReadLine(), out result);
+                isADecimal = decimal.TryParse(Console.ReadLine(), out decimal result);
                 while (!isADecimal)
                 {
                     Console.WriteLine("Your entry was not a decimal, try again.");
                     isADecimal = decimal.TryParse(Console.ReadLine(), out result);
                 }
-                type = PickAProcessor(result);
-
-                IPaymentProcessor entry1 = ProcessPayment(type, result);
+                
+                IPaymentProcessor entry1 = ProcessPayment(result);
                 Console.WriteLine($"You are procesing this payment with {entry1.PaymentType}");
                 entry1.Initialize();
                 entry1.ProcessPayment();
@@ -49,27 +47,22 @@ namespace PolyMorph__Practice
         
         }
 
-        private static string PickAProcessor(decimal result)
+        public static IPaymentProcessor ProcessPayment(decimal paymentAmount)
         {
-            string type;
-            if (result <= 100)
+            string paymentType;
+            if (paymentAmount <= 100)
             {
-                type = "Ingenic";
+                paymentType = "Ingenic";
             }
-            else if (result <= 500)
+            else if (paymentAmount <= 500)
             {
-                type = "Clover";
+                paymentType = "Clover";
             }
             else
             {
-                type = "Square";
+                paymentType = "Square";
             }
 
-            return type;
-        }
-
-        public static IPaymentProcessor ProcessPayment(string paymentType, decimal paymentAmount)
-        {
             switch (paymentType)
             {
                 case "Ingenic":
