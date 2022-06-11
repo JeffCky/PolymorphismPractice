@@ -14,60 +14,72 @@ namespace PolyMorph__Practice
             decimal result = 0m;
             bool isADecimal;
             bool finished = false;
-
-            do 
+            
+            do
             {
+                string type;
                 isADecimal = decimal.TryParse(Console.ReadLine(), out result);
-                if (result <= 100)
+                while (!isADecimal)
                 {
-                    Ingenic entry1 = new Ingenic(result);
-                    Console.WriteLine($"You are procesing this payment with {entry1.PaymentType}");
-                    entry1.Initialize();
-                    entry1.ProcessPayment();
-
-                    Console.WriteLine("----------------------\n");
-
+                    Console.WriteLine("Your entry was not a decimal, try again.");
+                    isADecimal = decimal.TryParse(Console.ReadLine(), out result);
                 }
-                else if (result <= 500)
-                {
-                    Clover entry2 = new Clover(result);
-                    Console.WriteLine($"You are procesing this payment with {entry2.PaymentType}");
-                    entry2.Initialize();
-                    entry2.ProcessPayment();
+                type = PickAProcessor(result);
 
-                    Console.WriteLine("----------------------\n");
-                }
-                else
-                {
-                    Square entry3 = new Square(result);
-                    Console.WriteLine($"You are procesing this payment with {entry3.PaymentType}");
-                    entry3.Initialize();
-                    entry3.ProcessPayment();
+                IPaymentProcessor entry1 = ProcessPayment(type, result);
+                Console.WriteLine($"You are procesing this payment with {entry1.PaymentType}");
+                entry1.Initialize();
+                entry1.ProcessPayment();
 
-                    Console.WriteLine("----------------------\n");
-                }
-                Console.WriteLine("Do you want to do it again? enter y or n.");
-                if(Console.ReadLine() == "y")
+                Console.WriteLine("----------------------\n");
+
+                Console.WriteLine("Do you want to process another payment? enter y or n.");
+                if (Console.ReadLine() == "y")
                 {
                     Console.WriteLine("Please enter an amount for the transaction, i.e. 23.45- no dollar sign and two decimal places only.");
-                    
+
                 }
                 else
                 {
                     break;
                 }
-                
+
             }
             while (!finished);
-            
-            
-            
-         
-            
+        
+        }
 
-            
+        private static string PickAProcessor(decimal result)
+        {
+            string type;
+            if (result <= 100)
+            {
+                type = "Ingenic";
+            }
+            else if (result <= 500)
+            {
+                type = "Clover";
+            }
+            else
+            {
+                type = "Square";
+            }
 
+            return type;
+        }
 
+        public static IPaymentProcessor ProcessPayment(string paymentType, decimal paymentAmount)
+        {
+            switch (paymentType)
+            {
+                case "Ingenic":
+                    return new Ingenic(paymentAmount);
+                case "Clover":
+                    return new Clover(paymentAmount);
+                default:
+                   return new Square(paymentAmount);
+
+            }
         }
     }
 }

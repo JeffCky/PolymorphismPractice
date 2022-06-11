@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CodeL\\PolyMorph__Practice\\PolyMorph__Practice\\PolyMorph__Practice.csproj": {}
+    "C:\\Users\\jeffe\\Source\\Repos\\PolymorphismPractice\\PolyMorph__Practice\\PolyMorph__Practice.csproj": {}
   },
   "projects": {
-    "C:\\CodeL\\PolyMorph__Practice\\PolyMorph__Practice\\PolyMorph__Practice.csproj": {
+    "C:\\Users\\jeffe\\Source\\Repos\\PolymorphismPractice\\PolyMorph__Practice\\PolyMorph__Practice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CodeL\\PolyMorph__Practice\\PolyMorph__Practice\\PolyMorph__Practice.csproj",
+        "projectUniqueName": "C:\\Users\\jeffe\\Source\\Repos\\PolymorphismPractice\\PolyMorph__Practice\\PolyMorph__Practice.csproj",
         "projectName": "PolyMorph__Practice",
-        "projectPath": "C:\\CodeL\\PolyMorph__Practice\\PolyMorph__Practice\\PolyMorph__Practice.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\CodeL\\PolyMorph__Practice\\PolyMorph__Practice\\obj\\",
+        "projectPath": "C:\\Users\\jeffe\\Source\\Repos\\PolymorphismPractice\\PolyMorph__Practice\\PolyMorph__Practice.csproj",
+        "packagesPath": "C:\\Users\\jeffe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jeffe\\Source\\Repos\\PolymorphismPractice\\PolyMorph__Practice\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\jeffe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -53,18 +49,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.17, 5.0.17]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
